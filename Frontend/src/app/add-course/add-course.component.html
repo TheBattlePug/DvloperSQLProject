@@ -1,0 +1,18 @@
+<!-- <label>Name:</label><br>
+<input mat-input type="text" #name><br><br>
+
+<label>Capacity:</label><br>
+<input mat-input type="number" #capacity><br><br> -->
+
+<mat-form-field class="example-full-width">
+    <mat-label>Name</mat-label>
+    <input matInput #name>
+  </mat-form-field><br><br>
+
+<mat-form-field class="example-full-width">
+    <mat-label>Capacity</mat-label>
+    <input matInput placeholder="##" #capacity>
+</mat-form-field><br><br>
+
+<button mat-raised-button color="primary" routerLink="/courses" routerLinkActive="active" (click)="handleClick()">Add Values</button>
+ 

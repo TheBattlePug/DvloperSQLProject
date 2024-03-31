@@ -1,0 +1,17 @@
+<!-- <label>Username:</label><br>
+<input type="text" #username><br><br>
+
+<label>Password:</label><br>
+<input type="text" #password><br><br> -->
+
+<mat-form-field class="example-full-width">
+    <mat-label>Username</mat-label>
+    <input matInput #username>
+  </mat-form-field><br><br>
+
+<mat-form-field class="example-full-width">
+    <mat-label>Password</mat-label>
+    <input matInput #password>
+</mat-form-field><br><br>
+
+<button mat-raised-button color="primary" (click)="handleClick()">Login</button>

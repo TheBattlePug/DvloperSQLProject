@@ -1,0 +1,28 @@
+
+<!-- <label>Name:</label><br>
+<input type="text" id="input1" #name><br><br>
+
+<label>Date of Birth:</label><br>
+<input type="text" id="input2" #dob><br><br>
+
+<label>Gender:</label><br>
+<input type="text" id="input3" #gender><br><br>
+
+<button (click)="handleClick()">Print Values</button> -->
+
+<mat-form-field class="example-full-width">
+    <mat-label>Name</mat-label>
+    <input type="text" id="input1" matInput #name>
+  </mat-form-field><br><br>
+
+<mat-form-field class="example-full-width">
+    <mat-label>Date of Birth</mat-label>
+    <input matInput type="text" id="input2" #dob>
+</mat-form-field><br><br>
+
+<mat-form-field class="example-full-width">
+    <mat-label>Gender</mat-label>
+    <input matInput type="text" id="input3" #gender>
+</mat-form-field><br><br>
+
+<button mat-raised-button color="primary" routerLink="/students" routerLinkActive="active" (click)="handleClick()">Print Values</button>

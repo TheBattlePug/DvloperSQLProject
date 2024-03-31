@@ -1,0 +1,26 @@
+
+<!-- <label>Name:</label><br>
+<input type="text" #name><br><br>
+
+<label>Date of Birth:</label><br>
+<input type="text" #dob><br><br>
+
+<label>Gender:</label><br>
+<input type="text" #gender><br><br> -->
+
+<mat-form-field class="example-full-width">
+    <mat-label>Name</mat-label>
+    <input matInput placeholder="Ex. John Doe" value="John Doe" #name>
+  </mat-form-field><br><br>
+
+<mat-form-field class="example-full-width">
+    <mat-label>Date of Birth</mat-label>
+    <input matInput placeholder="##-##-####" value="##-##-####" #dob>
+</mat-form-field><br><br>
+
+<mat-form-field class="example-full-width">
+    <mat-label>Gender</mat-label>
+    <input matInput placeholder="male" #gender>
+</mat-form-field><br><br>
+
+<button mat-raised-button color="primary" routerLink="/students" routerLinkActive="active" (click)="handleClick()">Print Values</button>

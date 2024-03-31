@@ -1,0 +1,15 @@
+version: '3'
+services:
+  postgres:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: password123
+    container_name: mysql
+    ports:
+      - '3306:3306'
+    volumes:
+      - mysqlDB:/data/mysql
+    env_file:
+      - ./.env
+volumes:
+  mysqlDB:
